@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    /* background-image: url("https://res-3.cloudinary.com/the-university-of-melbourne/image/upload/s--bayg74uJ--/c_limit,f_auto,q_75,w_892/v1/pursuit-uploads/75e/fad/76c/75efad76ccc1d0b0e440930c60acf2be912935428618d489db92f6ac5e29.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.calculator{
+    width: 300px;
+    margin: 20px;
+    height: 466px;
+    background-color: rgba(255, 255, 255, 0.13);
+    border: 2px solid rgba(53, 53, 53, 0.295);
+    border-radius: 15px;
+    box-shadow: 1px 1px 30px 1px rgba(66, 66, 66, 0.795);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.upper{
+    width: 100%;
+    height: 20%;
+}
+.upper>input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    padding: 5px 10px;
+    text-align: right;
+}
+
+.lower{
+    border-top: 1px solid #41404085;
+    display: grid;
+    width: 100%;
+    height: 80%;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+}
+
+.lower input{
+    border: 1px solid white;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.lower input:hover{
+    background-color: greenyellow;
+}
+#C{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgb(255, 35, 83);
+
+    border: none;
+}
+#C:hover{
+    background-color: rgb(255, 0, 55);
+}
+#plus{
+     grid-row-start: 3;
+     grid-row-end: 5; 
+    grid-column-start: 4;
+    grid-column-end: 5; 
+}
+#equal{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: orangered;
+    border: none;
+}
+#equal:hover{
+    background-color: rgb(224, 63, 4);
+
+}
+@media screen and (min-width : 226px) and (max-width : 280px) {
+    .calculator{
+        height: 350px;
+    }
+}
+
+@media screen and (max-width : 225px) {
+    .calculator{
+        height: 330px;
+    }
+}
