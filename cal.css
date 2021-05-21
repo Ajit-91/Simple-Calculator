@@ -7,9 +7,6 @@ body{
     width: 100vw;
     height: 100vh;
     background-color: rgb(255, 255, 255);
-    /* background-image: url("https://res-3.cloudinary.com/the-university-of-melbourne/image/upload/s--bayg74uJ--/c_limit,f_auto,q_75,w_892/v1/pursuit-uploads/75e/fad/76c/75efad76ccc1d0b0e440930c60acf2be912935428618d489db92f6ac5e29.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +20,7 @@ body{
     background-color: rgba(255, 255, 255, 0.13);
     border: 2px solid rgba(53, 53, 53, 0.295);
     border-radius: 15px;
-    box-shadow: 1px 1px 30px 1px rgba(66, 66, 66, 0.795);
+    box-shadow: 15px 18px 30px 1px rgba(66, 66, 66, 0.267);
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -62,6 +59,9 @@ body{
 .lower input:hover{
     background-color: greenyellow;
 }
+#zero{
+    border-bottom-left-radius: 15px;
+}
 #C{
     grid-column-start: 1;
     grid-column-end: 3;
@@ -70,7 +70,7 @@ body{
     border: none;
 }
 #C:hover{
-    background-color: rgb(255, 0, 55);
+    background-color: rgba(255, 0, 55, 0.911);
 }
 #plus{
      grid-row-start: 3;
@@ -82,7 +82,7 @@ body{
     grid-column-start: 3;
     grid-column-end: 5;
     background-color: orangered;
-    border: none;
+    border-bottom-right-radius: 15px;
 }
 #equal:hover{
     background-color: rgb(224, 63, 4);
